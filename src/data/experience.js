@@ -1,29 +1,62 @@
 export const timeline = [
   {
-    id: 'education',
+    id: 'waterloo',
     type: 'education',
-    title: 'B.Sc. Computer Engineering',
-    organization: 'Your University',
-    period: '2022 — Present',
+    title: 'BASc in Computer Engineering',
+    organization: 'University of Waterloo',
+    location: 'Waterloo, ON',
+    period: 'Sep 2025 — Apr 2030',
     description:
-      'Coursework in algorithms, data structures, computer architecture, software engineering, and operating systems.',
+      'Studying computer engineering with focus on software systems, algorithms, and applied computing.',
   },
   {
-    id: 'internship',
-    type: 'experience',
-    title: 'Software Engineering Intern',
-    organization: 'Company Name',
-    period: 'Summer 2025',
+    id: 'finance-club',
+    type: 'club',
+    title: 'Quantitative Analyst',
+    organization: 'Champlain Finance Club · Champlain College Saint-Lambert',
+    location: null,
+    period: '2024 — 2025',
     description:
-      'Contributed to feature development, code reviews, and unit tests in an agile team environment.',
+      'Conducted statistical and mathematical analysis to identify patterns, optimize decision-making, and generate actionable insights.',
   },
   {
-    id: 'club',
+    id: 'walmart',
     type: 'experience',
-    title: 'Developer Club Member',
-    organization: 'University Tech Society',
-    period: '2023 — Present',
+    title: 'OMNI Customer Fulfillment Associate',
+    organization: 'Walmart',
+    location: 'Brossard, QC',
+    period: 'Jun 2024 — Aug 2024',
     description:
-      'Organized hackathons, mentored peers on web development, and collaborated on open-source campus tools.',
+      'Processed 50+ online orders per shift with accuracy and quality control.',
+  },
+  {
+    id: 'champlain-dec',
+    type: 'education',
+    title: 'DEC in Pure and Applied Sciences',
+    organization: 'Champlain College Saint-Lambert',
+    location: 'Saint-Lambert, QC',
+    period: 'Sep 2023 — May 2025',
+    description:
+      'Completed a rigorous science program covering calculus, physics, and chemistry.',
+  },
+  {
+    id: 'zara',
+    type: 'experience',
+    title: 'Sales Associate',
+    organization: 'Zara',
+    location: 'Saint-Bruno-de-Montarville, QC',
+    period: 'Jun 2023 — Aug 2023',
+    description:
+      'Handled transactions efficiently, maintaining accuracy at checkout.',
+  },
+  {
+    id: 'recreofun',
+    type: 'experience',
+    title: 'Day Camp Counselor',
+    organization: 'Récréofun',
+    location: 'Saint-Bruno-de-Montarville, QC',
+    period: 'Jun 2022 — Aug 2022',
+    description:
+      'Led activities for groups of 20+ children, supporting engagement and teamwork.',
   },
 ]

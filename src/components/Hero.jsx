@@ -20,6 +20,11 @@ export default function Hero() {
           </h1>
           <p className="mt-4 text-xl font-medium text-indigo-300 sm:text-2xl">
             {profile.role}
+            {profile.school && (
+              <span className="mt-1 block text-lg text-muted sm:text-xl">
+                {profile.school}
+              </span>
+            )}
           </p>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted">
             {profile.tagline}

@@ -1,9 +1,10 @@
 export const profile = {
   name: 'Amin Mirlohi',
   role: 'Computer Engineering Student',
+  school: 'University of Waterloo',
   tagline:
-    'Building reliable software with clean code, curiosity, and a focus on real-world impact.',
-  bio: `I'm a Computer Engineering student passionate about software development, systems, and solving practical problems with code. I enjoy turning ideas into polished applications—from full-stack web apps to low-level experiments—and I'm always learning new tools and patterns along the way.`,
+    'Full-stack and ML-focused developer building mobile apps, analytics dashboards, and real-time systems.',
+  bio: `I'm pursuing a BASc in Computer Engineering at the University of Waterloo, with prior studies in Pure and Applied Sciences at Champlain College Saint-Lambert. I build end-to-end software—from React Native and Node.js apps to Flask/FastAPI backends and scikit-learn pipelines—and I'm especially interested in data-driven products, Azure, and machine learning.`,
   email: 'aminmirlohi14@gmail.com',
   github: 'https://github.com/AminMirlohii',
   linkedin: 'https://www.linkedin.com/in/aminmirlohi06/',

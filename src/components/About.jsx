@@ -14,7 +14,7 @@ export default function About() {
           description={profile.bio}
         />
 
-        <div className="grid gap-10 lg:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {skillCategories.map((category, index) => (
             <motion.div
               key={category.title}
