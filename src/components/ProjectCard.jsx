@@ -3,6 +3,12 @@ import { Code2, ExternalLink, Folder } from 'lucide-react'
 import SkillBadge from './ui/SkillBadge'
 
 export default function ProjectCard({ project, featured = false }) {
+  const stack = project.techStack ?? project.tags ?? []
+  const categoryLabel =
+    typeof project.category === 'string'
+      ? project.category.charAt(0).toUpperCase() + project.category.slice(1)
+      : ''
+
   return (
     <motion.article
       initial={{ opacity: 0, y: 24 }}
@@ -24,11 +30,18 @@ export default function ProjectCard({ project, featured = false }) {
           size={featured ? 56 : 40}
           strokeWidth={1.25}
         />
-        {project.featured && (
-          <span className="absolute right-4 top-4 rounded-full bg-indigo-500/20 px-3 py-1 text-xs font-medium text-indigo-300 ring-1 ring-indigo-500/30">
-            Featured
-          </span>
-        )}
+        <div className="absolute right-4 top-4 flex flex-wrap items-center gap-2">
+          {project.category && (
+            <span className="rounded-full bg-zinc-500/15 px-3 py-1 text-xs font-medium text-zinc-300 ring-1 ring-zinc-500/25">
+              {categoryLabel}
+            </span>
+          )}
+          {project.featured && (
+            <span className="rounded-full bg-indigo-500/20 px-3 py-1 text-xs font-medium text-indigo-300 ring-1 ring-indigo-500/30">
+              Featured
+            </span>
+          )}
+        </div>
       </div>
 
       <div className="flex flex-1 flex-col p-6">
@@ -39,8 +52,16 @@ export default function ProjectCard({ project, featured = false }) {
           {project.description}
         </p>
 
+        {Array.isArray(project.highlights) && project.highlights.length > 0 && (
+          <ul className="mt-4 list-disc space-y-1 pl-4 text-xs leading-relaxed text-zinc-400">
+            {project.highlights.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        )}
+
         <div className="mt-4 flex flex-wrap gap-2">
-          {project.tags.map((tag) => (
+          {stack.map((tag) => (
             <SkillBadge key={tag}>{tag}</SkillBadge>
           ))}
         </div>

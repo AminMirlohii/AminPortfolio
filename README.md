@@ -18,7 +18,7 @@ Edit these files—no component changes needed:
 | File | Purpose |
 |------|---------|
 | `src/data/profile.js` | Name, role, bio, email, social links |
-| `src/data/projects.js` | Project cards (add entries to the array) |
+| `src/data/projects.js` | Project cards (`techStack`, `highlights`, `category`, etc.) |
 | `src/data/skills.js` | Skill categories for About section |
 | `src/data/experience.js` | Education & experience timeline |
 
@@ -29,11 +29,12 @@ Edit these files—no component changes needed:
 {
   id: 'my-new-app',
   title: 'My New App',
-  description: 'Short description.',
-  tags: ['React', 'Node.js'],
-  image: null, // optional image URL later
+  description: 'Two or three sentences max.',
+  techStack: ['React', 'Node.js'],
+  highlights: ['Key outcome one', 'Key outcome two'],
   github: 'https://github.com/you/repo',
-  live: 'https://demo.example.com', // or null
+  live: null,
+  category: 'web', // 'web' | 'mobile' | 'ml' | 'fullstack'
   featured: false,
 },
 ```

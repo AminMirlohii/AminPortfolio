@@ -1,72 +1,76 @@
 /**
- * Add new projects by appending to this array.
- * featured: true — larger card in the grid (use sparingly)
+ * Add projects by appending to this array.
+ * github: replace placeholder URLs with your real repo links.
+ * featured: true — spans two columns on large screens (use sparingly)
  */
+
 export const projects = [
   {
-    id: 'taskflow',
-    title: 'TaskFlow',
+    id: 'personal-finance-tracker',
+    title: 'Personal Finance Tracker',
     description:
-      'A collaborative task manager with real-time updates, drag-and-drop boards, and team workspaces built for productivity.',
-    tags: ['React', 'Node.js', 'Socket.io', 'MongoDB'],
-    image: null,
-    github: 'https://github.com/yourusername/taskflow',
-    live: 'https://taskflow-demo.example.com',
+      'Full-stack mobile app for logging income and expenses with secure auth and a MySQL-backed ledger. REST APIs power transactions and user sessions, with analytics that surface spending patterns and simple insights.',
+    techStack: ['Node.js', 'Express', 'MySQL', 'React Native'],
+    highlights: [
+      'Mobile client for day-to-day transaction tracking',
+      'REST APIs for authentication and transaction CRUD',
+      'MySQL schema for durable financial data',
+      'Analytics views for spending patterns and insights',
+    ],
+    github: 'https://github.com/yourusername/personal-finance-tracker',
+    live: null,
+    category: 'fullstack',
     featured: true,
   },
   {
-    id: 'devmetrics',
-    title: 'DevMetrics Dashboard',
+    id: 'portfolio-ranker',
+    title: 'Portfolio Ranker',
     description:
-      'Analytics dashboard for GitHub repositories—tracks commits, PR velocity, and contributor activity with interactive charts.',
-    tags: ['React', 'TypeScript', 'Chart.js', 'GitHub API'],
-    image: null,
-    github: 'https://github.com/yourusername/devmetrics',
+      'Web app for portfolio analytics with a simulation dashboard. Pandas, yfinance, and scikit-learn drive risk metrics, anomaly detection, and model-backed signals; a React (Vite) UI visualizes performance with charts.',
+    techStack: ['Python', 'Flask', 'Scikit-learn', 'React', 'Vite', 'pandas', 'yfinance'],
+    highlights: [
+      'Simulation dashboard for portfolio analytics',
+      'ML pipeline for risk and anomaly detection',
+      'Market data ingestion via yfinance and pandas',
+      'React dashboard with chart-based performance views',
+    ],
+    github: 'https://github.com/yourusername/portfolio-ranker',
     live: null,
+    category: 'ml',
     featured: true,
   },
   {
-    id: 'campus-nav',
-    title: 'Campus Navigator',
+    id: 'fraud-detection-system',
+    title: 'Fraud Detection System',
     description:
-      'Mobile-friendly campus map with indoor routing, building search, and accessibility-friendly path suggestions.',
-    tags: ['React Native', 'Mapbox', 'Firebase'],
-    image: null,
-    github: 'https://github.com/yourusername/campus-nav',
+      'Real-time transaction monitoring with ML classification and risk scoring. FastAPI serves the pipeline against MySQL, and a React dashboard gives operators clear fraud signals and trends.',
+    techStack: ['Python', 'FastAPI', 'MySQL', 'React', 'Vite'],
+    highlights: [
+      'Low-latency scoring for incoming transactions',
+      'Classification + risk scoring pipeline',
+      'FastAPI service layer with MySQL persistence',
+      'React dashboard for alerts and visualization',
+    ],
+    github: 'https://github.com/yourusername/fraud-detection-system',
     live: null,
+    category: 'fullstack',
     featured: false,
   },
   {
-    id: 'algo-viz',
-    title: 'Algorithm Visualizer',
+    id: 'movie-x-movie',
+    title: 'Movie-X-Movie App',
     description:
-      'Interactive visualizations for sorting and graph algorithms with step-by-step playback and complexity notes.',
-    tags: ['React', 'Framer Motion', 'Algorithms'],
-    image: null,
-    github: 'https://github.com/yourusername/algo-viz',
-    live: 'https://algo-viz.example.com',
-    featured: false,
-  },
-  {
-    id: 'iot-monitor',
-    title: 'IoT Sensor Monitor',
-    description:
-      'Embedded project streaming temperature and humidity data to a web dashboard with threshold alerts.',
-    tags: ['C++', 'Arduino', 'MQTT', 'React'],
-    image: null,
-    github: 'https://github.com/yourusername/iot-monitor',
+      'Cross-platform movie discovery built with Expo, powered by the TMDB API for search and trending feeds. JavaScript UI patterns plus Appwrite on the backend for auth and synced data.',
+    techStack: ['React Native', 'Expo', 'Appwrite', 'JavaScript', 'TMDB API'],
+    highlights: [
+      'Discovery flows using TMDB search and trending',
+      'Polished mobile UI with Expo',
+      'Appwrite for backend capabilities',
+      'Fast browsing and favorites-style workflows',
+    ],
+    github: 'https://github.com/yourusername/movie-x-movie',
     live: null,
-    featured: false,
-  },
-  {
-    id: 'portfolio',
-    title: 'Personal Portfolio',
-    description:
-      'This site—a minimal, responsive developer portfolio with modular components and a single data source for projects.',
-    tags: ['React', 'Vite', 'Tailwind CSS', 'Framer Motion'],
-    image: null,
-    github: 'https://github.com/yourusername/portfolio',
-    live: null,
+    category: 'mobile',
     featured: false,
   },
 ]
