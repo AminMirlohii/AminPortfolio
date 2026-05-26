@@ -8,5 +8,5 @@ export const profile = {
   email: 'aminmirlohi14@gmail.com',
   github: 'https://github.com/AminMirlohii',
   linkedin: 'https://www.linkedin.com/in/aminmirlohi06/',
-  resumeUrl: '#',
+  resumeUrl: '/resume.pdf',
 }

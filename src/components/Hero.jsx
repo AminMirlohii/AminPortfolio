@@ -38,7 +38,10 @@ export default function Hero() {
               href={profile.resumeUrl}
               variant="secondary"
               size="lg"
-              external={profile.resumeUrl.startsWith('http')}
+              external={
+                profile.resumeUrl.startsWith('http') ||
+                profile.resumeUrl.endsWith('.pdf')
+              }
             >
               <FileText size={18} />
               Resume
