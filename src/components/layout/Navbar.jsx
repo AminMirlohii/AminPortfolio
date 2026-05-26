@@ -32,7 +32,7 @@ export default function Navbar() {
           href="#"
           className="font-mono text-sm font-medium text-zinc-100 transition-colors hover:text-indigo-400"
         >
-          &lt;{profile.shortName.split(' ')[0]} /&gt;
+          &lt;{profile.name.split(' ')[0]} /&gt;
         </a>
 
         <ul className="hidden items-center gap-8 md:flex">
