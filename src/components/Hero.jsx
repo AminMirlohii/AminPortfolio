@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { ArrowDown, Mail } from 'lucide-react'
+import { ArrowDown, FileText } from 'lucide-react'
 import { profile } from '../data/profile'
 import Button from './ui/Button'
 import StarryBackground from './hero/StarryBackground'
@@ -15,13 +15,14 @@ export default function Hero() {
     profile.heroRole ??
     `${profile.role} @ ${profile.school ?? 'University of Waterloo'}`
   const subtitle = profile.heroSubtitle ?? profile.tagline
+  const resumeOpensNewTab =
+    profile.resumeUrl.startsWith('http') || profile.resumeUrl.endsWith('.pdf')
 
   return (
     <section
       id="home"
       className="relative flex min-h-screen items-center justify-center overflow-hidden pt-20"
     >
-      {/* Animated gradient orbs */}
       <div className="pointer-events-none absolute inset-0" aria-hidden>
         <div className="hero-gradient-orb hero-gradient-orb--1" />
         <div className="hero-gradient-orb hero-gradient-orb--2" />
@@ -30,7 +31,6 @@ export default function Hero() {
 
       <StarryBackground />
 
-      {/* Vignette */}
       <div
         className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-surface"
         aria-hidden
@@ -82,9 +82,14 @@ export default function Hero() {
           <Button href="#projects" size="lg">
             View Projects
           </Button>
-          <Button href="#contact" variant="secondary" size="lg">
-            <Mail size={18} />
-            Contact Me
+          <Button
+            href={profile.resumeUrl}
+            variant="secondary"
+            size="lg"
+            external={resumeOpensNewTab}
+          >
+            <FileText size={18} />
+            Resume
           </Button>
         </motion.div>
       </div>

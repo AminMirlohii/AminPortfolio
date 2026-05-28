@@ -1,0 +1,8 @@
+Add these files to this folder:
+
+  thumbnail.png       (required for project card)
+  01-dashboard.png
+  02-simulation.png
+  03-charts.png
+
+Delete this file after uploading.

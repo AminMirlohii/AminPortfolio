@@ -13,6 +13,17 @@ export default function ProjectCard({ project }) {
       transition={{ type: 'spring', stiffness: 400, damping: 25 }}
       className="group flex h-full flex-col overflow-hidden rounded-xl border border-border bg-surface-card transition-shadow duration-300 hover:border-indigo-500/40 hover:shadow-xl hover:shadow-indigo-500/10"
     >
+      {project.thumbnail && (
+        <div className="relative aspect-video w-full overflow-hidden bg-surface-elevated">
+          <img
+            src={project.thumbnail}
+            alt={`${project.title} preview`}
+            className="h-full w-full object-cover object-top transition-transform duration-300 group-hover:scale-[1.03]"
+            loading="lazy"
+          />
+        </div>
+      )}
+
       <div className="flex flex-1 flex-col p-6">
         <h3 className="text-lg font-semibold text-white transition-colors group-hover:text-indigo-200">
           {project.title}

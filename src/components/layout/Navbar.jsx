@@ -48,13 +48,6 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <a
-          href="#contact"
-          className="hidden rounded-lg bg-indigo-500 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-indigo-400 md:inline-flex"
-        >
-          Get in touch
-        </a>
-
         <button
           type="button"
           className="rounded-lg p-2 text-zinc-300 hover:bg-white/5 md:hidden"
@@ -79,15 +72,6 @@ export default function Navbar() {
                 </a>
               </li>
             ))}
-            <li>
-              <a
-                href="#contact"
-                className="inline-flex rounded-lg bg-indigo-500 px-4 py-2 text-sm font-medium text-white"
-                onClick={() => setOpen(false)}
-              >
-                Get in touch
-              </a>
-            </li>
           </ul>
         </div>
       )}

@@ -85,11 +85,7 @@ export const projects = [
     deviceType: 'mobile',
     // → public/images/projects/personal-finance-tracker/thumbnail.png
     thumbnail: projectImage('personal-finance-tracker', 'thumbnail.png'),
-    images: [
-      projectImage('personal-finance-tracker', '01-home.png'),
-      projectImage('personal-finance-tracker', '02-transactions.png'),
-      projectImage('personal-finance-tracker', '03-analytics.png'),
-    ],
+    images: [],
     featured: true,
   },
   {
@@ -117,12 +113,8 @@ export const projects = [
     category: 'ml',
     deviceType: 'web',
     // → public/images/projects/portfolio-ranker/thumbnail.png
-    thumbnail: projectImage('portfolio-ranker', 'thumbnail.png'),
-    images: [
-      projectImage('portfolio-ranker', '01-dashboard.png'),
-      projectImage('portfolio-ranker', '02-simulation.png'),
-      projectImage('portfolio-ranker', '03-charts.png'),
-    ],
+    thumbnail: null,
+    images: [],
     featured: true,
   },
   {
@@ -141,11 +133,8 @@ export const projects = [
     category: 'fullstack',
     deviceType: 'web',
     // → public/images/projects/fraud-detection-system/thumbnail.png
-    thumbnail: projectImage('fraud-detection-system', 'thumbnail.png'),
-    images: [
-      projectImage('fraud-detection-system', '01-dashboard.png'),
-      projectImage('fraud-detection-system', '02-alerts.png'),
-    ],
+    thumbnail: null,
+    images: [],
     featured: false,
   },
   {
@@ -165,11 +154,7 @@ export const projects = [
     deviceType: 'mobile',
     // → public/images/projects/movie-x-movie/thumbnail.png
     thumbnail: projectImage('movie-x-movie', 'thumbnail.png'),
-    images: [
-      projectImage('movie-x-movie', '01-discover.png'),
-      projectImage('movie-x-movie', '02-search.png'),
-      projectImage('movie-x-movie', '03-detail.png'),
-    ],
+    images: [],
     featured: false,
   },
 ]
