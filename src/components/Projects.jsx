@@ -6,21 +6,21 @@ import ProjectCard from './projects/ProjectCard'
 export default function Projects() {
   return (
     <section id="projects" className="py-24">
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-6xl px-6 text-justify">
         <SectionHeading
           label="02. Projects"
           title="Things I've built"
           description="Full-stack, ML, and mobile work—from finance apps to fraud detection and movie discovery."
         />
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="flex flex-col gap-12 lg:gap-16">
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
-              initial={{ opacity: 0, y: 16 }}
+              initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-40px' }}
-              transition={{ duration: 0.35, delay: index * 0.06 }}
+              viewport={{ once: true, margin: '-60px' }}
+              transition={{ duration: 0.45, delay: index * 0.05 }}
             >
               <ProjectCard project={project} />
             </motion.div>

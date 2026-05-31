@@ -1,3 +1,4 @@
+import MatrixRainBackground from './components/background/MatrixRainBackground'
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
 import Hero from './components/Hero'
@@ -9,15 +10,18 @@ import Contact from './components/Contact'
 export default function App() {
   return (
     <>
-      <Navbar />
-      <main>
-        <Hero />
-        <About />
-        <Projects />
-        <Experience />
-        <Contact />
-      </main>
-      <Footer />
+      <MatrixRainBackground />
+      <div className="relative z-10">
+        <Navbar />
+        <main>
+          <Hero />
+          <About />
+          <Projects />
+          <Experience />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
     </>
   )
 }

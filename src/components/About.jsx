@@ -8,11 +8,13 @@ export default function About() {
   return (
     <section id="about" className="py-24">
       <div className="mx-auto max-w-6xl px-6">
-        <SectionHeading
-          label="01. About"
-          title="A bit about me"
-          description={profile.bio}
-        />
+        <SectionHeading label="01. About" title="A bit about me" />
+
+        <div className="mb-12 max-w-3xl space-y-4 text-justify text-lg leading-relaxed text-muted">
+          {profile.bio.split(/\n\n+/).map((paragraph, index) => (
+            <p key={index}>{paragraph.trim()}</p>
+          ))}
+        </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {skillCategories.map((category, index) => (

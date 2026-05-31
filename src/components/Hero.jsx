@@ -2,7 +2,6 @@ import { motion } from 'framer-motion'
 import { ArrowDown, FileText } from 'lucide-react'
 import { profile } from '../data/profile'
 import Button from './ui/Button'
-import StarryBackground from './hero/StarryBackground'
 import TypewriterText from './hero/TypewriterText'
 
 const fadeUp = {
@@ -23,19 +22,6 @@ export default function Hero() {
       id="home"
       className="relative flex min-h-screen items-center justify-center overflow-hidden pt-20"
     >
-      <div className="pointer-events-none absolute inset-0" aria-hidden>
-        <div className="hero-gradient-orb hero-gradient-orb--1" />
-        <div className="hero-gradient-orb hero-gradient-orb--2" />
-        <div className="hero-gradient-orb hero-gradient-orb--3" />
-      </div>
-
-      <StarryBackground />
-
-      <div
-        className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-surface"
-        aria-hidden
-      />
-
       <div className="relative z-10 mx-auto max-w-4xl px-6 py-24 text-center">
         <motion.p
           {...fadeUp}

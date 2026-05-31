@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
-import { profile } from '../../data/profile'
 
 const navLinks = [
   { href: '#about', label: 'About' },
@@ -27,14 +26,7 @@ export default function Navbar() {
           : 'bg-transparent'
       }`}
     >
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a
-          href="#"
-          className="font-mono text-sm font-medium text-zinc-100 transition-colors hover:text-indigo-400"
-        >
-          &lt;{profile.name.split(' ')[0]} /&gt;
-        </a>
-
+      <nav className="mx-auto flex max-w-6xl items-center justify-end px-6 py-4">
         <ul className="hidden items-center gap-8 md:flex">
           {navLinks.map((link) => (
             <li key={link.href}>

@@ -31,7 +31,8 @@
  * @typedef {Object} Project
  * @property {string} id              - URL slug for /projects/:id (detail pages)
  * @property {string} title
- * @property {string} description
+ * @property {string} description     - Short summary (also shown if detail is set)
+ * @property {string} [detail]        - Long-form write-up; no length limit on the card
  * @property {string[]} techStack
  * @property {string[]} highlights
  * @property {string} github
@@ -72,12 +73,12 @@ export const projects = [
     id: 'personal-finance-tracker',
     title: 'Personal Finance Tracker',
     description:
-      'Full-stack mobile app with React Native and Node.js—RESTful APIs for transactions and auth, MySQL storage, and real-time spending insights.',
+      'Full-stack mobile application built with React Native and Node.js, designed to help users track expenses, manage transactions, and gain real-time insights into their spending habits. The app includes secure authentication, structured data storage, and an analytics layer that visualizes financial behavior over time.',
     techStack: ['Node.js', 'Express', 'MySQL', 'React Native'],
     highlights: [
-      'Engineered RESTful APIs for transaction management and user authentication',
-      'Designed a MySQL database for efficient financial data storage and retrieval',
-      'Built analytics features for spending patterns and real-time financial insights',
+      'Engineered RESTful APIs using Node.js and Express for transaction handling, user authentication, and secure data flow between client and server',
+      'Designed and implemented a normalized MySQL database schema optimized for efficient storage, querying, and retrieval of financial records',
+      'Developed analytics features that process user transactions to generate real-time spending summaries and pattern detection',
     ],
     github: 'https://github.com/AminMirlohii/finance-tracker',
     live: null,
@@ -92,7 +93,7 @@ export const projects = [
     id: 'portfolio-ranker',
     title: 'Portfolio Ranker',
     description:
-      'Full-stack portfolio analytics app—Flask APIs and a React (Vite) dashboard to simulate allocations, benchmark performance, and visualize results.',
+      'Full-stack web application for portfolio analysis and visualization, built with a Flask backend and a React (Vite) dashboard. The project allows users to simulate asset allocations, compare performance against benchmarks, and explore portfolio behavior through interactive visualizations.',
     techStack: [
       'Python',
       'Flask',
@@ -104,16 +105,16 @@ export const projects = [
       'Recharts',
     ],
     highlights: [
-      'Simulated allocations and benchmarked performance with interactive charts',
-      'Used pandas, yfinance, and scikit-learn for risk metrics and anomaly detection',
-      'Classified portfolio risk with ML-driven signals on the dashboard',
+      'Built a Flask-based API layer to handle data processing, portfolio calculations, and communication with the frontend',
+      'Developed a React (Vite) dashboard with interactive charts to visualize portfolio performance and allocation changes',
+      'Used pandas and yfinance to fetch, clean, and analyze financial data from real market sources',
+      'Implemented scikit-learn models to compute risk metrics and detect anomalies in portfolio behavior',
     ],
     github: 'https://github.com/AminMirlohii/Portfolio-Analysis',
     live: null,
     category: 'ml',
     deviceType: 'web',
-    // → public/images/projects/portfolio-ranker/thumbnail.png
-    thumbnail: null,
+    thumbnail: projectImage('portfolio-ranker', 'thumbnail.png'),
     images: [],
     featured: true,
   },
@@ -121,19 +122,19 @@ export const projects = [
     id: 'fraud-detection-system',
     title: 'Fraud Detection System',
     description:
-      'End-to-end fraud detection with FastAPI and MySQL, ML classification and risk scoring, plus a React dashboard for transaction analytics.',
+      'End-to-end fraud detection platform built with FastAPI, MySQL, and a React frontend. The system processes transaction data, runs machine learning-based classification in real time, and provides risk scoring through an interactive dashboard.',
     techStack: ['Python', 'FastAPI', 'MySQL', 'React', 'Vite'],
     highlights: [
-      'Built FastAPI + MySQL backend for processing and validating transaction data',
-      'Integrated ML classification, risk scoring, and inference in a real-time pipeline',
-      'Delivered a React dashboard to visualize system outputs and analytics',
+      'Built a FastAPI backend with MySQL integration to process, validate, and store transaction data efficiently',
+      'Developed a real-time ML pipeline for fraud classification and risk scoring, integrating model inference directly into API workflows',
+      'Designed a modular system architecture to support scalable data processing and low-latency predictions',
+      'Created a React (Vite) dashboard to display transaction analytics, fraud alerts, and model outputs in a clear, interactive format',
     ],
     github: 'https://github.com/AminMirlohii/fraud-ml',
     live: null,
     category: 'fullstack',
     deviceType: 'web',
-    // → public/images/projects/fraud-detection-system/thumbnail.png
-    thumbnail: null,
+    thumbnail: projectImage('fraud-detection-system', 'thumbnail.png'),
     images: [],
     featured: false,
   },
@@ -141,12 +142,13 @@ export const projects = [
     id: 'movie-x-movie',
     title: 'Movie-X-Movie',
     description:
-      'Movie discovery app with TMDB search and trending content—React Native (Expo) UI with Appwrite for data storage.',
+      'Mobile movie discovery application built with React Native (Expo), allowing users to search films, explore trending content, and view real-time movie data using the TMDB API.',
     techStack: ['React Native', 'Expo', 'Appwrite', 'JavaScript', 'TMDB API'],
     highlights: [
-      'Search and explore films using live TMDB API data',
-      'Built a polished Expo mobile UI for discovery and trending',
-      'Integrated Appwrite for backend data storage',
+      'Integrated the TMDB API to enable live search, trending lists, and dynamic movie detail retrieval',
+      'Designed and developed a responsive mobile UI using React Native (Expo), focused on smooth browsing and discovery',
+      'Implemented backend data storage and basic user data management using Appwrite',
+      'Structured the app to efficiently handle API requests and update UI state in real time for a fluid user experience',
     ],
     github: 'https://github.com/AminMirlohii/Movie-X-Movie',
     live: null,
