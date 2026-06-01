@@ -1,8 +1,8 @@
 const variants = {
   primary:
-    'bg-indigo-500 text-white hover:bg-indigo-400 shadow-lg shadow-indigo-500/25',
+    'bg-blue-700 text-white hover:bg-blue-600 shadow-lg shadow-blue-700/25',
   secondary:
-    'border border-border bg-surface-card/80 text-zinc-200 hover:border-indigo-500/50 hover:bg-surface-elevated',
+    'border border-border bg-surface-card/80 text-zinc-200 hover:border-blue-600/50 hover:bg-surface-elevated',
   ghost: 'text-muted hover:text-zinc-100 hover:bg-white/5',
 }
 
@@ -21,7 +21,7 @@ export default function Button({
   className = '',
   ...props
 }) {
-  const classes = `inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 ${variants[variant]} ${sizes[size]} ${className}`
+  const classes = `inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 ${variants[variant]} ${sizes[size]} ${className}`
 
   if (href) {
     return (

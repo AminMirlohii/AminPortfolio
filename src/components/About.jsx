@@ -26,7 +26,7 @@ export default function About() {
               transition={{ duration: 0.4, delay: index * 0.1 }}
               className="rounded-xl border border-border bg-surface-card/50 p-6 backdrop-blur-sm"
             >
-              <h3 className="mb-4 font-mono text-sm font-medium text-indigo-400">
+              <h3 className="mb-4 font-mono text-sm font-medium text-blue-400">
                 {category.title}
               </h3>
               <div className="flex flex-wrap gap-2">

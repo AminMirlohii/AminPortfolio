@@ -11,7 +11,7 @@ export default function Footer() {
         </p>
         <a
           href="#"
-          className="font-mono text-xs text-muted transition-colors hover:text-indigo-400"
+          className="font-mono text-xs text-muted transition-colors hover:text-blue-400"
         >
           Back to top ↑
         </a>

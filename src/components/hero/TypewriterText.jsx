@@ -29,7 +29,7 @@ export default function TypewriterText({ text, speed = 45, className = '' }) {
         <motion.span
           animate={{ opacity: [1, 0] }}
           transition={{ duration: 0.5, repeat: Infinity }}
-          className="ml-0.5 inline-block text-indigo-400"
+          className="ml-0.5 inline-block text-blue-400"
           aria-hidden
         >
           |

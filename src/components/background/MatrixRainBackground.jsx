@@ -50,13 +50,13 @@ export default function MatrixRainBackground() {
       for (let i = 0; i < columns.length; i++) {
         const x = i * FONT_SIZE + FONT_SIZE / 2
         const y = Math.random() * height
-        ctx.fillStyle = `rgba(99, 102, 241, ${0.08 + Math.random() * 0.12})`
+        ctx.fillStyle = `rgba(37, 99, 235, ${0.06 + Math.random() * 0.1})`
         ctx.fillText(CHARSET[Math.floor(Math.random() * 2)], x, y)
       }
     }
 
     const draw = () => {
-      ctx.fillStyle = `rgba(10, 10, 15, ${TRAIL_ALPHA})`
+      ctx.fillStyle = `rgba(7, 12, 26, ${TRAIL_ALPHA})`
       ctx.fillRect(0, 0, width, height)
 
       ctx.font = `${FONT_SIZE}px "JetBrains Mono", ui-monospace, monospace`
@@ -69,8 +69,8 @@ export default function MatrixRainBackground() {
 
         const isHead = Math.random() > 0.965
         ctx.fillStyle = isHead
-          ? 'rgba(199, 210, 254, 0.9)'
-          : `rgba(99, 102, 241, ${0.12 + Math.random() * 0.35})`
+          ? 'rgba(147, 197, 253, 0.82)'
+          : `rgba(29, 78, 216, ${0.1 + Math.random() * 0.24})`
 
         ctx.fillText(char, x, column.y)
 

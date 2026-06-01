@@ -39,7 +39,7 @@ export default function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="rounded-2xl border border-border bg-gradient-to-br from-surface-card via-surface-elevated to-indigo-500/5 p-8 sm:p-12"
+          className="rounded-2xl border border-border bg-gradient-to-br from-surface-card via-surface-elevated to-blue-700/10 p-8 sm:p-12"
         >
           <p className="max-w-lg text-lg text-muted">
             The fastest way to reach me is by email. You can also find me on
@@ -58,7 +58,7 @@ export default function Contact() {
               <li key={label}>
                 <a
                   href={href}
-                  className="group flex items-center gap-2 text-muted transition-colors hover:text-indigo-400"
+                  className="group flex items-center gap-2 text-muted transition-colors hover:text-blue-400"
                   {...(external
                     ? { target: '_blank', rel: 'noopener noreferrer' }
                     : {})}

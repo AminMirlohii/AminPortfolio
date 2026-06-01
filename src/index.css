@@ -9,8 +9,8 @@
   --color-surface-card: #16161f;
   --color-border: #252532;
   --color-muted: #8b8b9e;
-  --color-accent: #6366f1;
-  --color-accent-hover: #818cf8;
+  --color-accent: #1d4ed8;
+  --color-accent-hover: #2563eb;
 }
 
 html {
@@ -23,5 +23,5 @@ body {
 }
 
 ::selection {
-  @apply bg-indigo-500/30 text-white;
+  @apply bg-blue-500/30 text-white;
 }

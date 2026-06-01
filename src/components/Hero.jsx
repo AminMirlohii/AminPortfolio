@@ -26,7 +26,7 @@ export default function Hero() {
         <motion.p
           {...fadeUp}
           transition={{ duration: 0.5 }}
-          className="mb-4 font-mono text-sm tracking-widest text-indigo-400 uppercase"
+          className="mb-4 font-mono text-sm tracking-widest text-blue-400 uppercase"
         >
           Hi, I&apos;m
         </motion.p>
@@ -42,7 +42,7 @@ export default function Hero() {
         <motion.p
           {...fadeUp}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="mt-5 text-lg font-medium text-indigo-300 sm:text-xl md:text-2xl"
+          className="mt-5 text-lg font-medium text-blue-300 sm:text-xl md:text-2xl"
         >
           {role}
         </motion.p>
